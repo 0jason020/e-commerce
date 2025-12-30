@@ -1,0 +1,31 @@
+/* Navbar.css */
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #131921;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.hide-mobile {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Correct way to handle media queries in React */
+@media (max-width: 768px) {
+    .hide-mobile {
+        display: none !important;
+    }
+    
+    .search-bar-container {
+        max-width: none;
+    }
+}
+
+/* Custom scrollbar for category links */
+.category-links::-webkit-scrollbar {
+    display: none;
+}
